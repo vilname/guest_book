@@ -1,0 +1,16 @@
+<script>
+var c = {
+  'b': 3,
+  'c': function() {
+     window.setTimeout(
+        function() {
+          console.log(window.c.b);
+        }, 4);
+     },
+  'd': function() {
+     alert(this.b);
+  }
+};
+
+console.log(c.c());
+</script>
